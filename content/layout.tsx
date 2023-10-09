@@ -4,7 +4,7 @@ export const HEADER = {
   logo: {
     href: "/",
     title: <FlextLogo />,
-    alt: "Flext Logo",
+    alt: "Mateus Neres Logo",
   },
   nav: [
     {
@@ -25,18 +25,6 @@ export const HEADER = {
       alt: "Work I've done.",
       desktop: true,
     },
-    {
-      href: "/books",
-      title: "Books",
-      alt: "Books I've read.",
-      desktop: true,
-    } /*
-    {
-      href: "/gallery",
-      title: "Gallery",
-      alt: "Images and stuff",
-      desktop: true,
-    },*/,
     {
       href: "/resume",
       title: "Resume",

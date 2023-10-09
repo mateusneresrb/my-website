@@ -1,6 +1,6 @@
 {
   "name": "flext",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "scripts": {
     "dev": "npm-run-all --parallel next:dev",

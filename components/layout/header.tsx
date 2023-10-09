@@ -15,10 +15,10 @@ export const Header: FC = ({}) => {
           <Link
             href="/"
             className="z-10 w-min"
-            data-tip={"Hi, I'm Felix. Welcome to my site."}
+            data-tip={"Hi, I'm Mateus. Welcome to my site."}
             data-delay-show={2000}
           >
-            <span className="sr-only">Flext.dev Logo</span>
+            <span className="sr-only">mateusneres.dev Logo</span>
             {HEADER.logo.title}
           </Link>
           <DesktopNav />

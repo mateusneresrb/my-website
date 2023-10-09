@@ -66,18 +66,18 @@ export const PortfolioPreview: FC<PortfolioPreviewProps> = ({}) => {
                 index % 8 === 2 &&
                   "bg-[linear-gradient(180deg,var(--tw-gradient-stops))] from-gray-200/40 to-rose-500/80 shadow-rose-500/20",
                 index % 8 === 3 &&
-                  "bg-[linear-gradient(120deg,var(--tw-gradient-stops))] from-green-400/70 to-cyan-600/80 shadow-cyan-600/20",
+                  "bg-[linear-gradient(120deg,var(--tw-gradient-stops))] from-green-400/70 to-emerald-600/80 shadow-emerald-600/20",
                 index % 8 === 4 &&
                   "bg-[linear-gradient(140deg,var(--tw-gradient-stops))] from-orange-500/50 to-yellow-500/80 shadow-yellow-500/20",
                 index % 8 === 5 &&
-                  "bg-[linear-gradient(200deg,var(--tw-gradient-stops))] from-purple-500/80 to-sky-600/40 shadow-sky-600/20",
+                  "bg-[linear-gradient(200deg,var(--tw-gradient-stops))] from-purple-500/80 to-teal-600/40 shadow-teal-600/20",
                 index % 8 === 6 &&
                   "bg-[linear-gradient(70deg,var(--tw-gradient-stops))] from-emerald-400/80 to-teal-600/40 shadow-teal-600/20",
                 index % 8 === 7 &&
-                  "bg-[linear-gradient(140deg,var(--tw-gradient-stops))] from-cyan-400/80 to-indigo-700/50 shadow-indigo-700/20"
+                  "bg-[linear-gradient(140deg,var(--tw-gradient-stops))] from-emerald-400/80 to-indigo-700/50 shadow-indigo-700/20"
               )}
             >
-              <figure className="relative flex aspect-2 w-full">
+              <figure style={{ maxHeight: "160px" }} className="relative flex aspect-2 w-full">
                 <Image
                   preload
                   src={project.featuredImage}
@@ -107,7 +107,9 @@ export const PortfolioPreview: FC<PortfolioPreviewProps> = ({}) => {
                 </div>
               </header>
               <main className="mt-2 text-[15px] tracking-tight text-gray-600 d:text-gray-200 ">
-                <p className="line-clamp-4">{project.description}</p>
+                <p title={project.description} className="line-clamp-4">
+                  {project.description}
+                </p>
               </main>
               <footer className="absolute bottom-3 left-0 mt-auto flex w-full items-end justify-end gap-2 px-4">
                 <div className="mr-auto text-sm font-semibold text-gray-700/80 d:text-gray-300/80">

@@ -3,11 +3,10 @@ import { Link } from "components/link";
 import { Badge } from "components/badge";
 import { CodeEditor } from "components/code-editor";
 import ToggleSwitch from "components/toggle-switch";
-import { TwitterProfile } from "components/twitter-profile";
+import { LinkedinProfile } from "components/linkedin-profile";
 import { HERO } from "content/hero";
 import { useTheme } from "next-themes";
 import { FC } from "react";
-import { components } from "twitter-api-sdk/dist/gen/openapi-types";
 
 export const Hero: FC = () => {
   const { theme, setTheme } = useTheme();
@@ -70,20 +69,19 @@ export const Hero: FC = () => {
         <section className="relative md:h-[420px]">
           <div className="relative flex h-full min-w-[460px] flex-col gap-4 sm:min-w-[660px] lg:absolute lg:left-8 lg:top-16 lg:left-6 lg:top-24 lg:min-w-[460px]">
             <div className="relative z-20 flex justify-end gap-1.5">
-              <Badge style="info">Hiker</Badge>
-              <Badge style="success">Chef</Badge>
-              <Badge style="warning">Runner</Badge>
-              <Badge style="accent">Mixologist</Badge>
+              <Badge style="info">Traveler</Badge>
+              <Badge style="warning">Fitness</Badge>
+              <Badge style="accent">Coffee Lover</Badge>
               <Badge style="plain">Space Enthusiast</Badge>
             </div>
             <div className="relative flex h-full flex-col">
-              <CodeEditor code={HERO.code} language="tsx" />
+              <CodeEditor code={HERO.code} language="java" />
               <div className="absolute -right-5 -bottom-5 -z-10 h-[calc(100%+1.25rem)] w-[calc(100%+1.25rem)] rounded-lg border border-gray-400/20 bg-gray-100/70 [mask-image:linear-gradient(-30deg,#fff_16.35%,rgb(255_255_255_/_0%)_61.66%)] d:border-gray-700/20 d:bg-gray-900/40"></div>
             </div>
             <div className="z-10 mt-1 flex gap-2 lg:-mt-2 lg:ml-16">
               <Link
                 target="_blank"
-                href="https://www.buymeacoffee.com/felixtellmann"
+                href="https://www.buymeacoffee.com/mateusneresrb"
                 className="group flex items-center justify-center rounded-full border-2 border-gray-400/50 bg-gray-100 bg-clip-padding py-1.5 px-3 text-sm font-medium text-gray-600 transition-all hfa:border-rose-500/30 hfa:bg-rose-500 hfa:text-white d:bg-gray-700 d:text-gray-50 d:hfa:bg-rose-500"
                 data-tip="Buy me a coffee"
               >
@@ -92,7 +90,7 @@ export const Hero: FC = () => {
               </Link>
               <Link
                 target="_blank"
-                href="https://github.com/FelixTellmann/flext/stargazers"
+                href="https://github.com/mateusneresrb/my-website"
                 className="group flex h-9 w-9 items-center justify-center rounded-full border-2 border-gray-400/50 bg-gray-100 bg-clip-padding text-sm font-medium text-gray-600 transition-all hfa:border-yellow-500/30 hfa:bg-yellow-500 hfa:text-white d:bg-gray-700 d:text-gray-50 d:hfa:bg-yellow-500"
                 data-tip="Star on Github"
               >
@@ -108,11 +106,11 @@ export const Hero: FC = () => {
             </div>
           </div>
           <div className="absolute hidden sm:top-24 sm:-right-5 sm:block lg:top-full lg:-left-64">
-            <TwitterProfile />
+            <LinkedinProfile />
           </div>
         </section>
-        <div className="background pointer-events-none absolute inset-0 z-0 -z-30 select-none">
-          <div className="relative top-1/2 left-1/2  h-2/3 w-1/2 -translate-y-[30%] rounded-full bg-gradient-radial from-emerald-600/30 to-sky-600/5 blur-2xl"></div>
+        <div className="background pointer-events-none absolute inset-0 z-1 -z-30 select-none">
+          <div className="relative top-1/2 left-1/2  h-2/3 w-1/2 -translate-y-[30%] rounded-full bg-gradient-radial from-emerald-600/30 to-teal-600/5 blur-2xl"></div>
         </div>
       </div>
     </section>
