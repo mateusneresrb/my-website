@@ -92,7 +92,6 @@ export const About: FC<AboutProps> = (props) => {
                   zIndex: -index,
                   filter: focusImageIndex !== index ? "grayscale(80)" : "",
                   opacity: focusImageIndex > index ? "0" : "1",
-                  maxHeight: "350px",
                 }}
               />
             );
