@@ -13,7 +13,7 @@ export const ABOUT = {
       caption: "Years Old",
     },
     {
-      statistic: "5+",
+      statistic: "7+",
       tooltip: "First line of code written in 2016",
       caption: "Years Dev",
     },
