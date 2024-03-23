@@ -46,23 +46,18 @@ export const CV = {
       ],
     },
     {
-      dateFrom: "2020-11-01",
+      dateFrom: "2016-02-01",
       dateTo: "2023-01-01",
       city: "Remote",
       country: "Brazil",
       company: "Futurium – Minecraft Server",
-      title: "Lead Developer",
+      title: "Lead Software Engineer",
       type: ["all", "relevant"],
       description: "Java · Redis · Wordpress · MariaDB · Unit Tests · Nginx · HTML · CSS · JavaScript · Among others",
       responsibilities: [
         {
           content:
             "I served as the development leader on a large Minecraft server, where I played an active role in the development and construction of the architecture to support thousands of users daily. My leadership and technical skills were fundamental to the server’s success.",
-          type: ["all", "relevant"],
-        },
-        {
-          content:
-            "During my time as a leader, I was responsible for coordinating the development team, setting goals, and ensuring deadlines were met. I also actively participated in development, implementing various features and optimizing server performance.",
           type: ["all", "relevant"],
         },
         {
@@ -113,7 +108,12 @@ export const CV = {
         },
         {
           content:
-            "My work involves the use of modern software engineering practices and design patterns to ensure the efficiency and reliability of the APIs I develop. I am constantly seeking to enhance my skills and knowledge to deliver high-quality products.",
+            "During my assignment at PagBank, the second largest digital bank in Brazil, I had the opportunity to deepen my knowledge of security practices and PCI (Payment Card Industry) compliance. This experience allowed me to apply rigorous measures to protect sensitive data and guarantee the integrity of financial transactions.",
+          type: ["all", "relevant"],
+        },
+        {
+          content:
+            "I also played an active role in the development of the APIs, collaborating directly with the development team. I also took part in technical discussions to make important decisions regarding the architecture, design and functionality of the APIs.",
           type: ["all", "relevant"],
         },
       ],
